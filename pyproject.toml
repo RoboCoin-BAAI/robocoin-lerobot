@@ -25,7 +25,7 @@ discord = "https://discord.gg/s3KuuzsPFb"
 
 [project]
 name = "lerobot"
-version = "0.3.4"
+version = "0.3.5"
 description = "🤗 LeRobot: State-of-the-art Machine Learning for Real-World Robotics in Pytorch"
 readme = "README.md"
 license = { text = "Apache-2.0" }
@@ -86,7 +86,7 @@ dependencies = [
 
     "draccus==0.10.0",           # TODO: Remove ==
     "gymnasium>=0.29.1,<1.0.0",  # TODO: Bumb dependency
-    "rerun-sdk>=0.21.0,<0.23.0", # TODO: Bumb dependency
+    "rerun-sdk>=0.31.0,<0.32.0", # TODO: Bumb dependency
 
     # Support dependencies
     "deepdiff>=7.0.1,<9.0.0",
