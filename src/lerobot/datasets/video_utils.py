@@ -248,11 +248,11 @@ def encode_video_frames(
     imgs_dir: Path | str,
     video_path: Path | str,
     fps: int,
-    vcodec: str = "libsvtav1",
+    vcodec: str = "h264",
     pix_fmt: str = "yuv420p",
     g: int | None = 2,
     crf: int | None = 30,
-    fast_decode: int = 0,
+    fast_decode: int = 1,
     log_level: int | None = av.logging.ERROR,
     overwrite: bool = False,
 ) -> None:
@@ -347,7 +347,7 @@ def encode_video_frames_gpu(
     pix_fmt: str = "yuv420p",
     g: int | None = 2,  # 更合理的 GOP（GPU 编码不推荐 g=2）
     cq: int | None = 1,  # NVENC 使用 cq（Constant Quality），类似 crf
-    preset: str = "p7",  # 高质量预设（p1~p7）
+    preset: str = "p5",  # 高质量预设（p1~p7）
     profile: str = "high",
     log_level: int | None = av.logging.ERROR,
     overwrite: bool = False,
